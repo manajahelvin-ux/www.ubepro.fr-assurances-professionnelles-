@@ -59,14 +59,17 @@ src="https://www.facebook.com/tr?id=2555334021252967&ev=PageView&noscript=1"
                     <input type="hidden" value="" name="categorie">
                     <input type="hidden" value="1" name="coordonnee">
                   </div>
-                  <div data-form="step" class="etape-formulaire-6 feane-1">
-                    <div class="question-contenu">
-                      <div class="champ-masque w-embed"><input type="hidden" name="question_1" value="Type(s) d'assurance(s) concernée(s) par votre demande"></div>
-                      <div class="etape-question-2">Type(s) d&#x27;assurance(s) concernée(s) par votre demande</div>
-                    </div><label data-checkbox="1" class="w-checkbox reponse-choix-multiple-3">
-                      <div class="champ-masque w-embed"><input type="hidden" value="Assurance Responsabilité Civile professionnelle" name="reponse_lib_1_1">
+                  <div data-form="step" class="etape-formulaire-6 feane-1 assurance-wizard-step" data-insurance-step="1">
+                    <div class="wizard-panel" data-wizard-panel="1">
+                      <div class="question-contenu">
+                        <div class="champ-masque w-embed"><input type="hidden" name="question_1" value="Type(s) d'assurance(s) concernée(s) par votre demande"></div>
+                        <div class="wizard-step-label">Étape 1</div>
+                        <div class="etape-question-2">Type(s) d'assurance(s) concernée(s) par votre demande</div>
+                      </div>
+                      <div class="champ-masque w-embed">
+                        <input type="hidden" value="Assurance Responsabilité Civile professionnelle" name="reponse_lib_1_1">
                         <input type="hidden" value="Assurance Multirisques Professionnels" name="reponse_lib_1_2">
-                        <input type="hidden" value="Assurance véhicules et flotte d'entrepris" name="reponse_lib_1_3">
+                        <input type="hidden" value="Assurance véhicules et flotte d'entreprise" name="reponse_lib_1_3">
                         <input type="hidden" value="Nombre de véhicules à assurer" name="reponse_champ_1_3">
                         <input type="hidden" value="Assurance Marchandises" name="reponse_lib_1_4">
                         <input type="hidden" value="Assurance décennale" name="reponse_lib_1_5">
@@ -80,37 +83,91 @@ src="https://www.facebook.com/tr?id=2555334021252967&ev=PageView&noscript=1"
                         <input type="hidden" name="reponse_check_lib_1_7_3" value="Epargne retraite">
                         <input type="hidden" name="reponse_check_lib_1_7_4" value="Dirigeant Salarié ou assimilé">
                         <input type="hidden" name="reponse_check_lib_1_7_5" value="Dirigeant non salarié (SSI)">
-                      </div><input type="checkbox" name="reponse_1_1" id="reponse_1_1" data-name="reponse_1_1" class="w-checkbox-input rcm-check"><span class="rcm-text-3 w-form-label" for="reponse_1_1">Responsabilité Civile professionnelle</span>
-                    </label><label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_2" data-name="reponse_1_2" class="w-checkbox-input rcm-check"><span class="rcm-text-3 w-form-label" for="reponse_1_2">Assurance Multirisques Professionnels</span></label>
-                    <div class="check-content-condition-5"><label class="w-checkbox check-content"><input type="checkbox" name="reponse_1_3" data-name="reponse_1_3" data-w-id="c13cb7a2-03b9-71fa-d01c-71f54b6d3771" class="w-checkbox-input check-condition-2"><span class="rcm-text-3 w-form-label" for="reponse_1_3">Assurance véhicules et flotte d&#x27;entreprise</span></label><input class="champ-condition-3 w-input" maxlength="256" name="reponse_champ_1_3" data-name="reponse_champ_1_3" placeholder="Nombre de véhicules à assurer" type="text"></div><label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_4" data-name="reponse_1_4" class="w-checkbox-input rcm-check"><span class="rcm-text-3 w-form-label" for="reponse_1_4">Assurance Marchandises</span></label><label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_5" data-name="reponse_1_5" class="w-checkbox-input rcm-check"><span class="rcm-text-3 w-form-label" for="reponse_1_5">Assurance décennale</span></label>
-                    <div class="check-content-condition-5"><label class="w-checkbox check-content"><input type="checkbox" name="reponse_1_6" data-name="reponse_1_6" class="w-checkbox-input check-condition-2"><span class="check-label w-form-label" for="reponse_1_6">Protection sociale collective</span></label>
-                      <div class="check-list-2"><label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_6_1" data-name="reponse_check_1_6_1" class="w-checkbox-input check-condition-list"><span class="check-label w-form-label" for="reponse_check_1_6_1">Complémentaire Santé</span></label><label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_6_2" data-name="reponse_check_1_6_2" class="w-checkbox-input check-condition-list"><span class="check-label w-form-label" for="reponse_check_1_6_2">Prévoyance</span></label><label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_6_3" data-name="reponse_check_1_6_3" class="w-checkbox-input check-condition-list"><span class="check-label w-form-label" for="reponse_check_1_6_3">Retraite complémentaire</span></label></div>
+                      </div>
+                      <div class="wizard-options">
+                        <label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_1" id="reponse_1_1" class="w-checkbox-input rcm-check"><span class="rcm-text-3 w-form-label">Responsabilité Civile professionnelle</span></label>
+                        <label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_2" id="reponse_1_2" class="w-checkbox-input rcm-check"><span class="rcm-text-3 w-form-label">Assurance Multirisques Professionnels</span></label>
+                        <div class="wizard-option-group">
+                          <label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_3" id="reponse_1_3" class="w-checkbox-input wizard-parent-check"><span class="rcm-text-3 w-form-label">Assurance véhicules et flotte d'entreprise</span></label>
+                          <input class="champ-condition-3 w-input wizard-vehicle-count" maxlength="256" name="reponse_champ_1_3" placeholder="Nombre de véhicules à assurer" type="text" aria-label="Nombre de véhicules à assurer" hidden>
+                        </div>
+                        <label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_4" id="reponse_1_4" class="w-checkbox-input rcm-check"><span class="rcm-text-3 w-form-label">Assurance Marchandises</span></label>
+                        <label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_5" id="reponse_1_5" class="w-checkbox-input rcm-check"><span class="rcm-text-3 w-form-label">Assurance décennale</span></label>
+                      </div>
+                      <div class="etape-bouton-17"><button type="button" class="bouton-suivant-8 btn-assurance w-button" data-wizard-next="2">Suivant</button></div>
                     </div>
-                    <div class="check-content-condition-5"><label class="w-checkbox check-content"><input type="checkbox" name="reponse_1_7" data-name="reponse_1_7" class="w-checkbox-input check-condition-2"><span class="check-label w-form-label" for="reponse_1_7">Protection Sociale du dirigeant</span></label>
-                      <div class="check-list-2"><label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_1" data-name="reponse_check_1_7_1" class="w-checkbox-input check-condition-list"><span class="check-label w-form-label" for="reponse_check_1_7_1">Complémentaire Santé</span></label><label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_2" data-name="reponse_check_1_7_2" class="w-checkbox-input check-condition-list"><span class="check-label w-form-label" for="reponse_check_1_7_2">Prévoyance</span></label><label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_3" data-name="reponse_check_1_7_3" class="w-checkbox-input check-condition-list"><span class="check-label w-form-label" for="reponse_check_1_7_3">Epargne retraite</span></label></div>
-                      <div class="check-list-2">
-                        <div class="titre-assurance-formulaire">Vous êtes :</div><label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_4" data-name="reponse_check_1_7_4" class="w-checkbox-input check-condition-list"><span class="check-label w-form-label" for="reponse_check_1_7_4">Dirigeant Salarié ou assimilé</span></label><label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_5" data-name="reponse_check_1_7_5" class="w-checkbox-input check-condition-list"><span class="check-label w-form-label" for="reponse_check_1_7_5">Dirigeant non salarié (SSI)</span></label>
+
+                    <div class="wizard-panel" data-wizard-panel="2" hidden>
+                      <div class="question-contenu">
+                        <div class="wizard-step-label">Étape 2</div>
+                        <div class="etape-question-2">Quelle protection sociale souhaitez-vous étudier ?</div>
+                      </div>
+                      <div class="wizard-options">
+                        <label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_6" id="reponse_1_6" class="w-checkbox-input wizard-parent-check"><span class="check-label w-form-label">Protection sociale collective</span></label>
+                        <label class="w-checkbox reponse-choix-multiple-3"><input type="checkbox" name="reponse_1_7" id="reponse_1_7" class="w-checkbox-input wizard-parent-check"><span class="check-label w-form-label">Protection Sociale du dirigeant</span></label>
+                      </div>
+                      <div class="etape-bouton-17">
+                        <button type="button" class="bouton-precedent-17 feane-1 w-button" data-wizard-back="1">Précédent</button>
+                        <button type="button" class="bouton-suivant-8 btn-assurance w-button" data-wizard-next="3" data-wizard-branch="social">Suivant</button>
                       </div>
                     </div>
-                    <div class="etape-bouton-17">
-                      <a data-form="back-btn" href="#" class="bouton-precedent-17 feane-1 w-button">Précédent</a>
-                      <a data-form="next-btn" href="#" class="bouton-suivant-8 btn-assurance w-button">Suivant</a>
+
+                    <div class="wizard-panel" data-wizard-panel="3" hidden>
+                      <div class="question-contenu">
+                        <div class="wizard-step-label">Étape 3</div>
+                        <div class="etape-question-2">Quelles garanties souhaitez-vous pour votre protection sociale ?</div>
+                      </div>
+                      <div class="wizard-coverage-group" data-coverage-for="collective" hidden>
+                        <div class="wizard-group-title">Protection sociale collective</div>
+                        <label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_6_1" class="w-checkbox-input"><span class="check-label w-form-label">Complémentaire Santé</span></label>
+                        <label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_6_2" class="w-checkbox-input"><span class="check-label w-form-label">Prévoyance</span></label>
+                        <label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_6_3" class="w-checkbox-input"><span class="check-label w-form-label">Retraite complémentaire</span></label>
+                      </div>
+                      <div class="wizard-coverage-group" data-coverage-for="director" hidden>
+                        <div class="wizard-group-title">Protection Sociale du dirigeant</div>
+                        <label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_1" class="w-checkbox-input"><span class="check-label w-form-label">Complémentaire Santé</span></label>
+                        <label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_2" class="w-checkbox-input"><span class="check-label w-form-label">Prévoyance</span></label>
+                        <label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_3" class="w-checkbox-input"><span class="check-label w-form-label">Épargne retraite</span></label>
+                      </div>
+                      <div class="etape-bouton-17">
+                        <button type="button" class="bouton-precedent-17 feane-1 w-button" data-wizard-back="2">Précédent</button>
+                        <button type="button" class="bouton-suivant-8 btn-assurance w-button" data-form="next-btn">Suivant</button>
+                      </div>
                     </div>
+
                   </div>
-                  <div data-form="step" class="etape-formulaire-6 feane-1 hide-etape-ass">
-                    <div class="question-contenu">
-                      <div class="champ-masque w-embed"><input type="hidden" name="question_2" value="Effectif de la société"></div>
-                      <div class="etape-question-2">Effectif de la société :<br>‍<br></div>
+                  <div data-form="step" class="etape-formulaire-6 feane-1 hide-etape-ass followup-wizard-step">
+                    <div class="followup-panel" data-followup-panel="effectif">
+                      <div class="question-contenu">
+                        <div class="champ-masque w-embed"><input type="hidden" name="question_2" value="Effectif de la société"></div>
+                        <div class="wizard-step-label">Étape 4</div>
+                        <div class="etape-question-2">Effectif de la société :</div>
+                      </div>
+                      <div class="champ-masque w-embed"><input type="hidden" name="reponse_check_lib_2_1" value=""></div>
+                      <select name="reponse_2" data-name="reponse_2" required class="select-field-19 w-select">
+                        <option value="" selected disabled>Veuillez sélectionner</option>
+                        <option value="auto ou micro entreprise">auto ou micro entreprise</option>
+                        <option value="1 à 5">1 à 5</option>
+                        <option value="6 et plus">6 et plus</option>
+                      </select>
+                      <div class="etape-bouton-17">
+                        <a data-form="back-btn" href="#" class="bouton-precedent-17 feane-1 w-button">Précédent</a>
+                        <button type="button" class="bouton-suivant-8 btn-assurance w-button" data-followup-next>Suivant</button>
+                      </div>
                     </div>
-                    <div class="champ-masque w-embed"><input type="hidden" name="reponse_check_lib_2_1" value=""></div><select name="reponse_2" data-name="reponse_2" required="" class="select-field-19 w-select">
-                      <option value=" Veuillez sélectionner"> Veuillez sélectionner</option>
-                      <option value="auto ou micro entreprise">auto ou micro entreprise</option>
-                      <option value="1 à 5">1 à 5</option>
-                      <option value="6 et plus">6 et plus</option>
-                    </select>
-                    <div class="etape-bouton-17">
-                      <a data-form="back-btn" href="#" class="bouton-precedent-17 feane-1 w-button">Précédent</a>
-                      <a data-form="next-btn" href="#" class="bouton-suivant-8 btn-assurance w-button">Suivant</a>
+                    <div class="followup-panel" data-followup-panel="director" hidden>
+                      <div class="question-contenu">
+                        <div class="wizard-step-label">Étape 5</div>
+                        <div class="etape-question-2">Vous êtes :</div>
+                      </div>
+                      <div class="wizard-options wizard-director-options">
+                        <label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_4" class="w-checkbox-input"><span class="check-label w-form-label">Dirigeant Salarié ou assimilé</span></label>
+                        <label class="w-checkbox check-content-list"><input type="checkbox" name="reponse_check_1_7_5" class="w-checkbox-input"><span class="check-label w-form-label">Dirigeant non salarié (SSI)</span></label>
+                      </div>
+                      <div class="etape-bouton-17">
+                        <button type="button" class="bouton-precedent-17 feane-1 w-button" data-followup-back>Précédent</button>
+                        <button type="button" class="bouton-suivant-8 btn-assurance w-button" data-form="next-btn">Suivant</button>
+                      </div>
                     </div>
                   </div>
                   <div data-form="step" class="etape-formulaire-6 feane-1 hide-etape-ass">
@@ -301,5 +358,6 @@ src="https://www.facebook.com/tr?id=2555334021252967&ev=PageView&noscript=1"
   <script src="script.js" defer></script>
 <script src="lead-handler.js" defer></script>
 <script src="verification-sms.js" defer></script>
+<script src="form-wizard.js" defer></script>
 </body>
 </html>

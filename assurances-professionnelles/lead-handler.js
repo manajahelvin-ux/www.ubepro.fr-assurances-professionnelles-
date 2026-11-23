@@ -471,12 +471,17 @@ var UBE_CONFIG = {
       var lib = textValue('reponse_lib_' + m[1] + '_' + m[2]);
       if (lib) return lib;
     }
+    var nested = n.match(/^reponse_check_(\d+)_(\d+)_(\d+)$/);
+    if (nested) {
+      var nestedLabel = textValue('reponse_check_lib_' + nested[1] + '_' + nested[2] + '_' + nested[3]);
+      if (nestedLabel) return nestedLabel;
+    }
     var lbl = input.closest ? input.closest('label') : null;
     var span = lbl ? lbl.querySelector('span') : null;
     return span ? span.textContent.trim() : String(input.value || n);
   }
   function reponseQuestion(num) {
-    var checks = form.querySelectorAll('input[type="checkbox"][name^="reponse_' + num + '_"]:checked');
+    var checks = form.querySelectorAll('input[type="checkbox"][name^="reponse_' + num + '_"]:checked, input[type="checkbox"][name^="reponse_check_' + num + '_"]:checked');
     if (checks.length) {
       var libs = [];
       for (var i = 0; i < checks.length; i++) libs.push(libelleCase(checks[i]));

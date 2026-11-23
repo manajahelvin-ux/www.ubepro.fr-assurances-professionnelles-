@@ -2259,3 +2259,91 @@ html, body {
 overflow: auto !important;
 }
 .form-autonome { margin: 0 0 15px; }
+
+/* Parcours multi-étapes du formulaire de choix d'assurance */
+.wizard-panel {
+  width: 100%;
+  animation: wizard-panel-in 180ms ease-out;
+}
+.wizard-panel[hidden],
+.wizard-coverage-group[hidden] {
+  display: none !important;
+}
+.wizard-step-label {
+  margin-bottom: 4px;
+  color: #777;
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.wizard-options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.wizard-option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.wizard-vehicle-count:not([hidden]) {
+  display: block;
+  width: calc(100% - 30px);
+  margin: 0 0 5px 30px;
+}
+.wizard-coverage-group {
+  margin: 8px 0;
+  padding: 8px 10px 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.wizard-group-title {
+  margin-bottom: 5px;
+  color: #333;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+.wizard-director-options {
+  margin-top: 12px;
+}
+.wizard-panel .etape-bouton-17 {
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.wizard-panel .etape-bouton-17 > button {
+  min-height: 40px;
+  border: 0;
+  cursor: pointer;
+}
+.wizard-panel .etape-bouton-17 > button[hidden] {
+  display: none !important;
+}
+.wizard-panel .bouton-precedent-17 {
+  margin-right: auto;
+}
+.wizard-panel .bouton-suivant-8 {
+  margin-left: auto;
+}
+@keyframes wizard-panel-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media screen and (max-width: 479px) {
+  .etape-formulaire-6.feane-1 {
+    width: 100%;
+  }
+  .wizard-panel .etape-bouton-17 > button {
+    min-width: 100px;
+  }
+}
+.followup-panel {
+  width: 100%;
+}
+.followup-panel[hidden] {
+  display: none !important;
+}
